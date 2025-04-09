@@ -14,6 +14,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+.index-banner {
+    padding-top: 50px;
+}
+.main-content {
+    padding-top: 120px; /* Add padding to avoid overlap with fixed header */
+}
 
 nav {
     display: flex;
@@ -35,7 +41,7 @@ nav {
     position: absolute;
     top: 50px;
     left: 0px;
-    right: 0px;
+    right: 50;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -110,16 +116,36 @@ nav {
 
 .about-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-between; /* Space out the text and image */
+    align-items: center; /* Align items vertically in the center */
     padding: 20px;
+    text-align: center; /* Center text within its container */
 }
 
-.about-text, .about-portrait {
-    margin-bottom: 20px;
+.about-text {
+    flex: 1; /* Allow the text to take up less space */
+    max-width: 50%; /* Text takes up 50% of the container */
+}
+
+.about-portrait {
+    flex: 1; /* Allow the image to take up the remaining space */
+    max-width: 50%; /* Image takes up 50% of the container */
+    display: flex;
+    justify-content: center; /* Center image within its container */
+    align-items: center;
 }
 
 .about-portrait img {
-    max-width: 200px;
+    width: 80%; /* Increase the width of the image */
+    max-width: 300px; /* Set a maximum width */
     border-radius: 8px;
+}
+#subjects ul {
+    list-style-position: inside; /* Ensures bullets are inside the padding area */
+    padding-left: 20px; /* Adjust padding to align bullets correctly */
+}
+
+#subjects li {
+    margin-bottom: 10px; /* Optional: add space between list items */
 }
