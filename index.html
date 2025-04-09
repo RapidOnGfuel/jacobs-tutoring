@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu-bar">
+        <nav>
+            <button onclick="toggleMenu()" class="menu-icon">☰</button>
+            <ul id="menu" class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1 class="large-text">MATH</h1>
+            <h2 class="small-text">Tutoring</h2>
+        </div>
+        <div class="buttons">
+            <a href="about.html" class="button">About Me</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </div>
+        <section id="subjects" class="box">
+            <h2>Subjects</h2>
+            <ul>
+                <li>Basic Arithmetic</li>
+                <li>Fractions & Decimals</li>
+                <li>Pre-Algebra</li>
+                <li>Word Problems</li>
+                <li>Basic Geometry</li>
+                <li>Homework Help</li>
+                <li>And More!</li>
+            </ul>
+        </section>
+        <section id="pricing" class="box">
+            <h2>Pricing</h2>
+            <p>
+                30 Minutes: <b>$15</b><br>
+                60 Minutes: <b>$25</b><br>
+                Extra time is <b>$10</b> per <b>30 minutes</b>.
+            </p>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

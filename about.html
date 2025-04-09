@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu-bar">
+        <nav>
+            <button onclick="toggleMenu()" class="menu-icon">☰</button>
+            <ul id="menu" class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#subjects">Subjects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-container box">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Jacob! 👋<br>
+                   I'm a local high school student offering 1-on-1 math tutoring for Elementary and Middle schoolers.
+                   Whether it's homework help, test prep, or confidence building, I'm here to make math easier and more fun!
+                </p>
+                <h2>Why Choose Me?</h2>
+                <ul>
+                    <li>Patient & Relatable: I explain math in simple, easy-to-understand ways.</li>
+                    <li>Local: I am familiar with local schools' curricula.</li>
+                    <li>Affordable: My prices start at just $15!</li>
+                    <li>Adaptability: I can adapt to your child's needs.</li>
+                </ul>
+            </div>
+            <div class="about-portrait">
+                <img src="images/portrait.jpg" alt="Portrait of Jacob">
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
